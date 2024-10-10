@@ -10,7 +10,7 @@ class Device:
     def turn_off(self):
         print(f"{self.brand} {self.model} is now powered off.")
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"Brand: {self.brand}, Model: {self.model}, Price: {self.price}"
     
 class Laptop(Device):
@@ -21,7 +21,7 @@ class Laptop(Device):
     def open_laptop(self):
         print(f"{self.brand} {self.model} is now opened.")
 
-    def __str__(self) -> str:
+    def __str__(self):
         info = super().__str__()
         return f"{info}, Ram Size: {self.ram} GB"
     
@@ -33,7 +33,7 @@ class Smartphone(Device):
     def take_photo(self):
         print(f"{self.brand} {self.model} took a photo with a {self.camera_resolution} MP camera.")
     
-    def __str__(self) -> str:
+    def __str__(self):
         info = super().__str__()
         return f"{info}, Camera Resolution: {self.camera_resolution} MP"
     
